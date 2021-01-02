@@ -1,3 +1,59 @@
 .container-fluid {
-  height: 125vh;
+}
+
+header > img {
+  width: 100vw;
+  height: auto;
+  margin-top: 50px;
+}
+
+#history,
+#advertising {
+  padding-top: 60px;
+  height: 96vh;
+}
+
+#advertising {
+  background-image: url('https://s3.amazonaws.com/gs-waymarking-images/a24b8267-89dc-4a79-9045-0d12e44119e0_d.jpg');
+  background-repeat: none;
+  background-size: cover;
+  color: white;
+}
+
+#advertising p {
+  font-size: 110%;
+  font-weight: 550;
+}
+
+article img {
+  width: 100%;
+  margin-top: 1em;
+}
+
+.slogan {
+  font-style: italic;
+  margin: 0px;
+  text-align: center;
+}
+
+.date-range {
+  font-size: 80%;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-box {
+  flex: 33%;
+  padding: 10px;
+}
+
+iframe {
+  width: 100%;
+  height: auto;
+  min-height: 350px;
 }
