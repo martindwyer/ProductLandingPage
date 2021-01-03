@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <link rel="icon" href="https://mdbytes.com/wp-content/uploads/2021/01/hamburger-31792_640.png" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
@@ -16,8 +17,9 @@
 <body>
     <div class="container-fluid">
         <header id="header">
-            <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">Navbar</a>
+            <nav id="nav-bar" class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#"><img
+                        src="https://mdbytes.com/wp-content/uploads/2021/01/hamburger-31792_640.png" height="40"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                     aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -32,12 +34,13 @@
                 </div>
             </nav>
 
-            <img src="https://webzoom.freewebs.com/burgerchef/Tampa%20Fla%20BC%20pics/Treasure%20Island%20aug%2069%20a.jpg"
+            <img id="header-img"
+                src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/burger-chef-1958-shawn-vincelette.jpg"
                 alt="burger chef">
         </header>
         <main>
             <article class="row" id="history">
-                <div class="col-md-8">
+                <div class="col-md-8" id="story">
                     <h3>Burger Chef: Legacy</h3>
                     <img <p>In 1954, Frank and Donald Thomas patented the flame broiler in their parent company General
                     Equipment
@@ -87,12 +90,8 @@
             </article>
 
             <div id="advertising" class="flex-container">
-                <div class="flex-box">
-                    <h4>Advertising</h4>
-
-
-                </div>
-                <div class="flex-box">
+                <div class="ad-box-1">
+                    <h3>Advertising</h3>
                     <h4 class="text-center">Slogans</h4>
                     <p class='slogan'>"Nowhere else but Burger Chef."</p>
                     <p class='date-range'>1980 to 1996</p>
@@ -107,18 +106,48 @@
                     <p class='date-range'>1970 to 1971</p>
                     <p class='slogan'>"Burger Chef goes all out to please your family."</p>
                     <p class='date-range'>1970 to 1971</p>
+
                 </div>
-                <div class="flex-box">
-                    <h4>Television Commercials</h4>
-                    <iframe src="https://www.youtube.com/embed/fFrS4YIOnv4">
-                    </iframe>
+                <div class="ad-box-2">
+                    <video id="video" controls>
+                        <source src="https://mdbytes.com/wp-content/uploads/2021/01/burger_chef.mp4" type="video/mp4">
+                    </video>
                 </div>
+            </div>
+
+            <div id="contact" class="row">
+                <div class="col-md-4">
+                    <h3>Contact Us</h3>
+
+                    <form id="form" action="https://www.freecodecamp.org/email-submit" method="POST">
+                        <div class="form-group">
+                            <label id="name-label" for="name">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter full name"
+                                aria-describedby="nameHelp">
+                            <small id="nameHelp" class="form-text text-muted">We'll never share your name with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label id="email-label" for="email">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="e.g. fred@flintstones.com"
+                                aria-describedby="emailHelp" required>
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="mb-3">
+                            <label for="comments">Message</label>
+                            <textarea class="form-control" id="comments" placeholder="Your message here"></textarea>
+                        </div>
+
+                        <input id="submit" type="submit" class="btn btn-primary"></input>
+                    </form>
+                </div>
+                <div class="col-md-8">
+                    <img src="https://webzoom.freewebs.com/burgerchef/concept%20bc%201958.jpg">
+                </div>
+            </div>
 
 
-            </div>
-            <div id="advertising-banner">
-                <img src="https://s3.amazonaws.com/gs-waymarking-images/a24b8267-89dc-4a79-9045-0d12e44119e0_d.jpg">
-            </div>
 
         </main>
 
